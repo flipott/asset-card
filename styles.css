@@ -29,11 +29,17 @@ html, body {
 .asset-image img {
     height: 350px;
     border-radius: 15px;
+    display: block;
 }
+
+
 
 .asset-image {
     align-self: center;
+    position: relative;
+    display: flex;
 }
+
 
 .asset-card {
     background: var(--card-bg-blue);
@@ -42,7 +48,7 @@ html, body {
     align-items: flex-start;
     border-radius: 15px;
     padding: 15px 30px;
-
+    width: 350px;
 }
 
 .asset-name {
@@ -52,19 +58,65 @@ html, body {
     font-weight: 600;
 }
 
+.asset-name:hover {
+    color: var(--cyan);
+}
+
 .asset-description {
     color: var(--soft-blue);
+    margin-bottom: 15px;
 }
 
 .asset-information {
     display: flex;
     width: 100%;
+    margin-bottom: 15px;
+    justify-items: center;
 }
+
 
 .asset-time {
     display: flex;
+    margin-left: auto;   
+    gap: 15px; 
+    color: var(--soft-blue);
+}
+
+.asset-time img {
+    height: 20px;
 }
 
 .asset-price {
     display: flex;
+    gap: 15px;
+    color: var(--cyan);
+}
+
+.line {
+    border-bottom: solid 2px var(--line-blue);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.user-info {
+    display: flex;
+    gap: 25px;
+}
+
+.user-info img {
+    height: 70px;
+}
+
+.created-by {
+    align-self: center;
+    color: var(--soft-blue);
+}
+
+.name {
+    color: var(--white);
+}
+
+.name:hover {
+     color: var(--cyan);
 }
